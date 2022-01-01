@@ -1,4 +1,4 @@
-# javaChap05 퀴즈
+# Chap05 퀴즈
 
 퀴즈 공용코드 menu 리스트
 
