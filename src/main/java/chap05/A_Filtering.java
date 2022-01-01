@@ -3,6 +3,9 @@ package chap05;
 import java.util.Arrays;
 import java.util.List;
 
+import static chap05.Dish.menu;
+import static java.util.stream.Collectors.toList;
+
 public class A_Filtering {
 
     public static void main(String... args) {
@@ -29,7 +32,7 @@ public class A_Filtering {
 //        System.out.println(filteredMenu);
 
         // 정렬된 요리기 때문에
-        specialMenu.stream().takeWhile(dish -> dish.getCalories() < 320).forEach(System.out::println);
+//        specialMenu.stream().takeWhile(dish -> dish.getCalories() < 320).forEach(System.out::println);
 //        System.out.println("Sorted menu sliced with takeWhile():");
 //        List<Dish> slicedMenu1 = specialMenu.stream()
 //                .takeWhile(dish -> dish.getCalories() < 320)
@@ -43,13 +46,13 @@ public class A_Filtering {
 //        slicedMenu2.forEach(System.out::println);
 //
 //        // Truncating a stream
-//        List<Dish> dishesLimit3 = menu.stream()
-//                .filter(d -> d.getCalories() > 300)
-//                .limit(3)
-//                .collect(toList());
+        List<Dish> dishesLimit3 = menu.stream()
+                .limit(3)
+                .collect(toList());
 //        System.out.println("Truncating a stream:");
 //        dishesLimit3.forEach(System.out::println);
-//
+//        System.out.println(menu.stream().sorted( (dish1, dish2) -> dish1.getCalories() - dish2.getCalories()).collect(toList()));;
+
 //        // Skipping elements
 //        List<Dish> dishesSkip2 = menu.stream()
 //                .filter(d -> d.getCalories() > 300)

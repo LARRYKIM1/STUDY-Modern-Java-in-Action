@@ -1,5 +1,6 @@
 package chap07;
 
+import java.util.Arrays;
 import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 import java.util.stream.LongStream;
@@ -10,8 +11,8 @@ import static chap07.ParallelStreamsHarness.FORK_JOIN_POOL;
 // 1차: 39 msecs, 2차: 39 msecs, 3차:
 public class ForkJoinSumCalculator extends RecursiveTask<Long> {
     public static final long THRESHOLD = 10_000;
-    private final long[] numbers;
-    private final int start;
+    private final long[] numbers; // 더할 숫자
+    private final int start; // 각 서브작업별 시작숫자
     private final int end;
 
     public ForkJoinSumCalculator(long[] numbers) {
@@ -27,8 +28,8 @@ public class ForkJoinSumCalculator extends RecursiveTask<Long> {
     @Override
     protected Long compute() {
         int length = end - start;
-        if (length <= THRESHOLD) {
-            return computeSequentially();
+        if (length <= THRESHOLD) { // 10만개 < 1만개
+            return computeSequentially(); // 업무가 충분히 작아졌을 경우 실행
         }
         ForkJoinSumCalculator leftTask = new ForkJoinSumCalculator(numbers, start, start + length / 2);
         leftTask.fork();
@@ -53,7 +54,7 @@ public class ForkJoinSumCalculator extends RecursiveTask<Long> {
     }
 
     public static void main(String[] args) {
-        forkJoinSum(100_000);
+        forkJoinSum(100_000); // 십만
     }
 }
 

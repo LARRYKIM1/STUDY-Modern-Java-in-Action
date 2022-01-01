@@ -49,5 +49,4 @@ public class Trader {
     public String toString() {
         return String.format("Trader:%s in %s", name, city);
     }
-
 }

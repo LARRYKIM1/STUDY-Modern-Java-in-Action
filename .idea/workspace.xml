@@ -36,10 +36,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/chap05" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/chap08" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\youwa\IdeaProjects\STUDY-Modern-Java-in-Action\src\main\java\chap08" />
       <recent name="C:\Users\youwa\IdeaProjects\STUDY-Modern-Java-in-Action\src\main\java\chap05" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -47,9 +48,9 @@
       <recent name="chap06" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.A_Filtering">
-    <configuration name="A_Filtering" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap05.A_Filtering" />
+  <component name="RunManager" selected="Application.PuttingIntoPractice">
+    <configuration name="D_Reducing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap05.D_Reducing" />
       <module name="STUDY-Modern-Java-in-Action" />
       <extension name="coverage">
         <pattern>
@@ -74,12 +75,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParallelStreamsHarness" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap07.ParallelStreamsHarness" />
+    <configuration name="F_BuildingStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap05.F_BuildingStreams" />
       <module name="STUDY-Modern-Java-in-Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.*" />
+          <option name="PATTERN" value="chap05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Laziness" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap05.Laziness" />
+      <module name="STUDY-Modern-Java-in-Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PuttingIntoPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap05.PuttingIntoPractice" />
+      <module name="STUDY-Modern-Java-in-Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,9 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.A_Filtering" />
+        <item itemvalue="Application.PuttingIntoPractice" />
+        <item itemvalue="Application.Laziness" />
+        <item itemvalue="Application.F_BuildingStreams" />
         <item itemvalue="Application.E_NumericStreams" />
-        <item itemvalue="Application.ParallelStreamsHarness" />
+        <item itemvalue="Application.D_Reducing" />
       </list>
     </recent_temporary>
   </component>
@@ -103,11 +132,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640892757930</updated>
-      <workItem from="1640892759237" duration="2162000" />
+      <workItem from="1640892759237" duration="14261000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-11.0.8/lib/src.zip!/java.base/java/util/Map.java</url>
+          <line>1658</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
